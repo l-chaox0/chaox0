@@ -1,0 +1,7 @@
+main.*
+*.cfg
+*.json
+.idea/
+venv/
+*pass*
+*test*
