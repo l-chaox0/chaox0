@@ -1,7 +1,7 @@
 main.*
 *.cfg
 *.json
-.idea/
+*idea/
 venv/
 *pass*
 *test*
