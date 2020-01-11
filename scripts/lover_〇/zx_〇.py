@@ -25,16 +25,16 @@ def get_data(url):
     return title[0],comp,phone
 
 def write_file(data):
-    r_xls = open_workbook("D:\Desktop\est.xls")
+    r_xls = open_workbook("est.xls")
     row = r_xls.sheets()[0].nrows
     excel = copy(r_xls)
     table = excel.get_sheet(0)
     #print(len(data))
     for i in range(len(data)):
         table.write(row, i, data[i])
-    excel.save("D:\Desktop\est.xls")
+    excel.save("est.xls")
 
-with open('D:\Desktop\data.txt','r') as fn:
+with open('url.txt','r') as fn:
 
     for line in fn.readlines():
         a = get_data(line)
